@@ -49,6 +49,7 @@ const WeatherApp = () => {
             setWicon(clear_icon);
         }
     }
+
   return (
     <div className='container'>
         <div className='top-bar'>
@@ -56,29 +57,35 @@ const WeatherApp = () => {
             <div className="search-icon" onClick={()=>{search()}}>
                 <img src={search_icon} alt="" />
             </div>
-            </div>
-            <div className="weather-image">
-                <img src={wicon} alt="" />
-            </div>
+        </div>
 
-            <div className="weather-temp">24°c</div>
-            <div className="weather-location">London</div>
-            <div className="data-container">
-                <div className="element">
-                    <img src={humidity_icon} alt="" className='icon' />
-                    <div className="data">
-                        <div className="humidity-percent">64%</div>
-                        <div className="text">Humidity</div>
-                    </div>
-                </div>
-                <div className="element">
-                    <img src={wind_icon} alt="" className='icon' />
-                    <div className="data">
-                        <div className="wind-rate">18 kmph</div>
-                        <div className="text">Wind speed</div>
-                    </div>
+        <div className="weather-image">
+            <img src={wicon} alt="" />
+        </div>
+
+        <div className="weather-temp">24°c</div>
+        <div className="weather-location">London</div>
+
+        <div className="data-container">
+            <div className="element">
+                <img src={humidity_icon} alt="" className='icon' />
+                <div className="data">
+                    <div className="humidity-percent">64%</div>
+                    <div className="text">Humidity</div>
                 </div>
             </div>
+            <div className="element">
+                <img src={wind_icon} alt="" className='icon' />
+                <div className="data">
+                    <div className="wind-rate">18 kmph</div>
+                    <div className="text">Wind speed</div>
+                </div>
+            </div>
+        </div>
+
+        <footer className="footer">
+            Created and Deployed by csairam
+        </footer>
     </div>
   )
 }

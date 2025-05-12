@@ -87,5 +87,14 @@
 
 .icon{
     margin-top: 10px;
-    
+
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+    padding: 10px 0;
+    background-color: #f1f1f1;
 }
